@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
+import Navbar from "../common/Navbar";
 
 const HeroSection = () => {
 	const { scrollY } = useScroll();
@@ -36,14 +37,8 @@ const HeroSection = () => {
 			{/* <Navbar className="absolute top-0 left-0 w-full z-50 p-6 md:p-12" /> */}
 
 			{/* LEFT COLUMN: BRANDING & TYPOGRAPHY */}
-			<div className="flex flex-col justify-between p-6 md:p-14 md:pb-6 h-full text-[#e1ff51] min-h-[50vh] md:min-h-screen">
-				{/* Top Header Placeholder / Logo Icon */}
-				<div className="pt-4">
-					<div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center text-[#e1ff51] font-bold text-2xl">
-						{/* Replace with your exact SVG/Logo Component */}
-						𠮷
-					</div>
-				</div>
+			<div className="flex flex-col justify-between p-6 md:p-24 md:pb-6  h-full text-[#e1ff51] min-h-[50vh] md:min-h-screen">
+				<Navbar className="fixed top-4 left-4 z-50" />
 
 				{/* Big Heading Titles with Slide-up Animation */}
 				<motion.div
@@ -54,7 +49,7 @@ const HeroSection = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
 						{/* The Huge Text Container (Left-aligned text layout) */}
 						<h1
-							className="text-[min(45vh,20vw)] md:text-[min(45vh,8vw)] font-[990] uppercase leading-[0.85] lg:col-span-12 flex flex-col items-start justify-start text-left w-full scale-y-[1.4]"
+							className="text-[min(45vh,20vw)] md:text-[min(45vh,8vw)] font-[1000] uppercase leading-[0.85] lg:col-span-12 flex flex-col items-start justify-start text-left w-full scale-y-[1.4]"
 							style={{ fontFamily: "Manuka, sans-serif" }}
 						>
 							{/* Line 1: MH */}
@@ -65,7 +60,7 @@ const HeroSection = () => {
 									visible: { transition: { staggerChildren: 0.05 } },
 								}}
 							>
-								{"MHT ".split("").map((letter, index) => (
+								{"MHT.".split("").map((letter, index) => (
 									<span
 										key={`mh-${index}`}
 										className="overflow-hidden inline-block"
@@ -131,9 +126,10 @@ const HeroSection = () => {
 							transition={{ delay: 0.6, duration: 0.6 }}
 							className="text-xs md:text-sm font-medium leading-relaxed lg:col-span-12 mt-10 text-left"
 						>
-							Designing graphic and digital experiences that ease, beautify, and
-							delight moments in life Designing graphic and digital experiences
-							that ease, beautify, and delight moments in life.
+							Engineering intelligent software that thinks, scales, and operates
+							with precision. Merging distributed systems, multi-agent AI
+							pipelines, and clean backend data flows into fluid, high-impact
+							digital experiences.
 						</motion.p>
 					</div>
 				</motion.div>
