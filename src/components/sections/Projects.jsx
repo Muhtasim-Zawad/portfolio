@@ -8,8 +8,8 @@ const projectData = [
 		logo: "⧉",
 		display_name: "CiteKit",
 		role: "FULL-STACK",
-		date: "2025",
-		image: "src/assets/images/zawad-portfolio-image.jpg",
+		date: "Jan, 2026",
+		image: null,
 		title: "CiteKit",
 		techStack: ["Python", "LangGraph", "FastAPI", "React", "Supabase", "Groq"],
 		summary:
@@ -27,8 +27,8 @@ const projectData = [
 		logo: "∏",
 		display_name: "Baksho",
 		role: "FULL-STACK",
-		date: "2025",
-		image: "src/assets/images/zawad-portfolio-image.jpg",
+		date: "Aug, 2025",
+		image: null,
 		title: "Project Baksho",
 		techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Radix UI"],
 		summary:
@@ -46,8 +46,8 @@ const projectData = [
 		logo: "pico",
 		display_name: "PicoDB",
 		role: "SYSTEMS",
-		date: "2025",
-		image: "src/assets/images/zawad-portfolio-image.jpg",
+		date: "Sep, 2024",
+		image: null,
 		title: "PicoDB",
 		techStack: ["C++", "CMake", "SQL", "CSV", "Cryptography"],
 		summary:
@@ -65,8 +65,8 @@ const projectData = [
 		logo: "⟁",
 		display_name: "FictiPay",
 		role: "ML ENGINEER",
-		date: "2025",
-		image: "src/assets/images/zawad-portfolio-image.jpg",
+		date: "Jun, 2026",
+		image: null,
 		title: "FictiPay Churn",
 		techStack: ["Python", "Polars", "LightGBM", "SHAP", "Optuna"],
 		summary:
@@ -75,7 +75,8 @@ const projectData = [
 			"Engineered 53 features using Polars on 595K accounts.\nOptimized LightGBM via Optuna with stratified cross-validation.\nIsolated key churn drivers using SHAP interpretability.\nModeled user stickiness with custom drop_off_score and switching_cost metrics.",
 		links: {
 			demo: null,
-			source: null,
+			source:
+				"https://github.com/Muhtasim-Zawad/nsucec-cybernauts-datathon-2026.git",
 			live: null,
 		},
 	},
@@ -265,7 +266,7 @@ const ProjectsSection = () => {
 	return (
 		<section
 			id="projects"
-			className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#e1ff51] selection:text-[#00272c]"
+			className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#ce3421] selection:text-[#00272c]"
 		>
 			<div className="max-w-6xl w-full flex flex-col items-center space-y-16">
 				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase leading-none font-sans flex items-center justify-center">

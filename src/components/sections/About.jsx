@@ -42,7 +42,6 @@ const AboutSection = () => {
 						))}
 					</motion.div>
 				</h2>
-
 				{/* ========================================================= */}
 				{/* CENTER ALIGNED DESCRIPTION PARAGRAPH                      */}
 				{/* ========================================================= */}
@@ -53,11 +52,25 @@ const AboutSection = () => {
 					transition={{ delay: 0.4, duration: 0.8 }}
 					className="text-base md:text-xl font-medium leading-relaxed max-w-2xl text-center text-[#e1ff51]/90"
 				>
-					I am a forward-thinking digital craftsman dedicated to building heavy
-					typography-driven, highly fluid web applications. Merging clean
-					backend architectures with interactive frontends, I engineer
-					interfaces that don't just function smoothly, but leave an indelible
-					creative impression.
+					I’m Muhtasim Zawad, a full-stack and AI/ML engineer focused on
+					building intelligent systems that think, scale, and occasionally
+					hallucinate with confidence. I engineer data-dense web platforms,
+					scalable backend architectures, and multi-agent AI pipelines—paired
+					with high-impact, typography-driven frontends.
+				</motion.p>
+				<motion.p
+					initial={{ opacity: 0, y: 15 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true }}
+					transition={{ delay: 0.4, duration: 0.8 }}
+					className="text-base md:text-xl font-medium leading-relaxed max-w-2xl text-center text-[#e1ff51]/90"
+				>
+					I have a deep appreciation for human ingenuity, resilience, and
+					creativity, inspired by the likes of Tarkovsky, Rilke, Makhmalbaf, and
+					concepts like the Alive Internet Theory. When I'm not orchestrating
+					LangGraph workflows or optimizing data pipelines, you'll find me
+					exploring world cinema, writing, or undergoing an existential crisis
+					after a 3:00 AM BoJack or The Bear binge-watch session.
 				</motion.p>
 
 				{/* ========================================================= */}

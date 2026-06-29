@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { motion } from "motion/react";
 import DragCrad from "./Second";
+import Divider from "./components/common/Divider";
 import HeroSection from "./components/sections/Hero";
 import AnimatedButton from "./components/common/Button";
 import AboutSection from "./components/sections/About";
@@ -17,9 +18,13 @@ function App() {
 				{/* <AnimatedButton /> */}
 				<HeroSection />
 				<AboutSection />
+				<Divider />
 				<EducationSection />
+				<Divider />
 				<ProjectsSection />
+				<Divider />
 				<SkillsSection />
+				<Divider />
 				<ContactSection />
 			</div>
 		</>
