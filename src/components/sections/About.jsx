@@ -9,7 +9,7 @@ const AboutSection = () => {
 				{/* ========================================================= */}
 				{/* STAGGERED TEXT SWIPE UP TITLE                             */}
 				{/* ========================================================= */}
-				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase tracking-tighter leading-none font-sans flex items-center justify-center">
+				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase leading-none font-sans flex items-center justify-center">
 					<motion.div
 						className="flex overflow-hidden"
 						initial="hidden"
@@ -75,7 +75,7 @@ const AboutSection = () => {
 						onClick={() => console.log("Navigate to Works")}
 						className="!bg-[#ce3421] !text-[#00272c] border border-[#ce3421] hover:!text-[#ce3421]"
 					>
-						More Works
+						Explore Works
 					</AnimatedButton>
 
 					<AnimatedButton

@@ -82,7 +82,7 @@ const ProjectsSection = () => {
 				{/* ========================================================= */}
 				{/* STAGGERED TEXT SWIPE UP TITLE                             */}
 				{/* ========================================================= */}
-				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase tracking-tighter leading-none font-sans flex items-center justify-center">
+				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase leading-none font-sans flex items-center justify-center">
 					<motion.div
 						className="flex overflow-hidden"
 						initial="hidden"

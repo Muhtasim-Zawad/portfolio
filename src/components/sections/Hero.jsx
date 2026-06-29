@@ -36,7 +36,7 @@ const HeroSection = () => {
 			{/* <Navbar className="absolute top-0 left-0 w-full z-50 p-6 md:p-12" /> */}
 
 			{/* LEFT COLUMN: BRANDING & TYPOGRAPHY */}
-			<div className="flex flex-col justify-between p-6 md:p-12 h-full text-[#e1ff51] min-h-[50vh] md:min-h-screen">
+			<div className="flex flex-col justify-between p-6 md:p-14 md:pb-6 h-full text-[#e1ff51] min-h-[50vh] md:min-h-screen">
 				{/* Top Header Placeholder / Logo Icon */}
 				<div className="pt-4">
 					<div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center text-[#e1ff51] font-bold text-2xl">
@@ -46,7 +46,11 @@ const HeroSection = () => {
 				</div>
 
 				{/* Big Heading Titles with Slide-up Animation */}
-				<motion.div className="my-auto py-8" initial="hidden" animate="visible">
+				<motion.div
+					className="my-auto py-8 pb-0"
+					initial="hidden"
+					animate="visible"
+				>
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
 						{/* The Huge Text Container (Left-aligned text layout) */}
 						<h1
@@ -136,9 +140,9 @@ const HeroSection = () => {
 
 				{/* Footer Meta Details Data Row */}
 				<div className="flex justify-between items-center text-[10px] md:text-xs font-bold tracking-wider border-t border-black/10 pt-4 uppercase">
-					<div>Brooklyn, NY</div>
-					<div>Jun 20, 2026</div>
-					<div>6:45 AM</div>
+					<div>Dhaka, BD</div>
+					<div>Jun 29, 2026</div>
+					<div>10:45 PM</div>
 				</div>
 			</div>
 

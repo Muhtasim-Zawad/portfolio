@@ -20,7 +20,7 @@ const ContactSection = () => {
 			{/* ========================================================= */}
 			<div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center space-y-12 my-auto py-12">
 				{/* Staggered Text Swipe Up Header */}
-				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase tracking-tighter leading-none font-sans flex items-center justify-center">
+				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase leading-none font-sans flex items-center justify-center">
 					<motion.div
 						className="flex overflow-hidden"
 						initial="hidden"
