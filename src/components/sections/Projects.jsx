@@ -10,9 +10,10 @@ const projectData = [
 		company: "WORK & CO",
 		date: "2021 - Present",
 		image: "https://placehold.co/800x400/00272c/e1ff51?text=WORK+%26+CO",
-		title: "Work & Co — Senior Lead",
+		title: "Citekit",
 		techStack: ["React", "TypeScript", "Figma", "Storybook"],
-		summary: "Leading product design systems for enterprise-scale applications.",
+		summary:
+			"Leading product design systems for enterprise-scale applications.",
 		description:
 			"Spearheaded the design and development of a comprehensive design system adopted across multiple product teams. Architected reusable component libraries, established UX patterns, and mentored junior designers. Collaborated closely with engineering to ensure pixel-perfect implementation.",
 		links: {
@@ -28,7 +29,7 @@ const projectData = [
 		company: "TOGETHER AGENCY",
 		date: "2019 - 2021",
 		image: "https://placehold.co/800x400/00272c/e1ff51?text=TOGETHER+AGENCY",
-		title: "Together Agency — Senior Designer",
+		title: "Project Baksho",
 		techStack: ["Figma", "After Effects", "Webflow", "JavaScript"],
 		summary: "Crafted high-impact digital experiences for global brands.",
 		description:
@@ -46,11 +47,11 @@ const projectData = [
 		company: "FROG",
 		date: "2018 - 2019",
 		image: "https://placehold.co/800x400/00272c/e1ff51?text=FROG",
-		title: "Frog — Visual Designer",
+		title: "PicoDB",
 		techStack: ["Illustrator", "Photoshop", "Premiere Pro", "Figma"],
 		summary: "Designed immersive brand identities and motion systems.",
 		description:
-				"Developed visual identity systems for tech startups and established enterprises. Created motion design assets, brand guidelines, and promotional materials. Collaborated with strategy and engineering teams to translate complex briefs into compelling visual narratives.",
+			"Developed visual identity systems for tech startups and established enterprises. Created motion design assets, brand guidelines, and promotional materials. Collaborated with strategy and engineering teams to translate complex briefs into compelling visual narratives.",
 		links: {
 			demo: "https://example.com/demo",
 			source: "https://github.com/example",
@@ -155,7 +156,7 @@ const ProjectModal = ({ project, onClose }) => {
 		(e) => {
 			if (e.target === e.currentTarget) onClose();
 		},
-		[onClose]
+		[onClose],
 	);
 
 	return (
@@ -227,13 +228,13 @@ const ProjectModal = ({ project, onClose }) => {
 					)}
 
 					{project.summary && (
-						<p className="text-sm md:text-base font-medium italic text-[#e1ff51]/70 leading-relaxed">
+						<p className="text-sm md:text-base font-medium italic text-[#e1ff51]/70 leading-relaxed text-left">
 							{project.summary}
 						</p>
 					)}
 
 					{project.description && (
-						<p className="text-sm md:text-base leading-relaxed text-[#e1ff51]/80">
+						<p className="text-sm md:text-base leading-relaxed text-[#e1ff51]/80 text-left">
 							{project.description}
 						</p>
 					)}
@@ -364,10 +365,7 @@ const ProjectsSection = () => {
 
 			<AnimatePresence>
 				{selectedProject && (
-					<ProjectModal
-						project={selectedProject}
-						onClose={closeModal}
-					/>
+					<ProjectModal project={selectedProject} onClose={closeModal} />
 				)}
 			</AnimatePresence>
 		</section>
