@@ -72,7 +72,11 @@ const AboutSection = () => {
 				>
 					{/* Custom style mapping passed to match the inverted look */}
 					<AnimatedButton
-						onClick={() => console.log("Navigate to Works")}
+						onClick={() =>
+							document
+								.getElementById("projects")
+								?.scrollIntoView({ behavior: "smooth" })
+						}
 						className="!bg-[#ce3421] !text-[#00272c] border border-[#ce3421] hover:!text-[#ce3421]"
 					>
 						Explore Works

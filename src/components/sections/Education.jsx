@@ -8,7 +8,7 @@ const educationData = [
 		degree: "Bachelor of Science in Software Engineering",
 		gpa: "CGPA: 3.66 (Till 5th Semester)",
 		date: "Aug. 2023 – Present",
-		location: "Dhaka, Bangladesh",
+		location: "Dhaka`, Bangladesh",
 	},
 	{
 		id: 2,

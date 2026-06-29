@@ -5,89 +5,74 @@ import AnimatedButton from "../common/Button";
 const projectData = [
 	{
 		id: 1,
-		logo: "★★",
-		role: "SENIOR LEAD",
-		company: "WORK & CO",
-		date: "2021 - Present",
-		image: "https://placehold.co/800x400/00272c/e1ff51?text=WORK+%26+CO",
-		title: "Citekit",
-		techStack: ["React", "TypeScript", "Figma", "Storybook"],
+		logo: "⧉",
+		display_name: "CiteKit",
+		role: "FULL-STACK",
+		date: "2025",
+		image: "src/assets/images/zawad-portfolio-image.jpg",
+		title: "CiteKit",
+		techStack: ["Python", "LangGraph", "FastAPI", "React", "Supabase", "Groq"],
 		summary:
-			"Leading product design systems for enterprise-scale applications.",
+			"A 4-agent LangGraph pipeline for multi-source paper discovery and citation network visualization.",
 		description:
-			"Spearheaded the design and development of a comprehensive design system adopted across multiple product teams. Architected reusable component libraries, established UX patterns, and mentored junior designers. Collaborated closely with engineering to ensure pixel-perfect implementation.",
+			"4-agent LangGraph pipeline aggregating OpenAlex, Semantic Scholar, CrossRef, and Dimensions.\nAsync FastAPI backend with JWT authentication and persistent memory.\nLLM query expansion via Groq with hybrid relevance-frequency paper ranking.\nFull-stack research workspace featuring citation network visualization and thread-based chat.",
 		links: {
-			demo: "https://example.com/demo",
-			source: "https://github.com/example",
-			live: "https://example.com",
+			demo: null,
+			source: "https://github.com/Muhtasim-Zawad/Project_CiteKit.git",
+			live: null,
 		},
 	},
 	{
 		id: 2,
 		logo: "∏",
-		role: "SENIOR DESIGNER",
-		company: "TOGETHER AGENCY",
-		date: "2019 - 2021",
-		image: "https://placehold.co/800x400/00272c/e1ff51?text=TOGETHER+AGENCY",
+		display_name: "Baksho",
+		role: "FULL-STACK",
+		date: "2025",
+		image: "src/assets/images/zawad-portfolio-image.jpg",
 		title: "Project Baksho",
-		techStack: ["Figma", "After Effects", "Webflow", "JavaScript"],
-		summary: "Crafted high-impact digital experiences for global brands.",
+		techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Radix UI"],
+		summary:
+			"A full-stack crowdfunding platform with multi-portal management, integrated Stripe payments, and real-time dashboard analytics.",
 		description:
-			"Delivered end-to-end design solutions for Fortune 500 clients, from conceptual wireframes to polished high-fidelity prototypes. Led user research sessions, design sprints, and cross-functional stakeholder presentations. Awarded 'Best Digital Campaign' for a flagship 2020 project.",
+			"3 distinct portals (User, Organizer, Admin) covering campaign creation, moderation, and management.\nSecure Stripe payment integration and robust JWT-based user authentication.\nLive dynamic dashboards featuring data visualization and analytics via Recharts.\nModular component library built with Radix UI, React Hook Form, and Zod validation.",
 		links: {
-			demo: "https://example.com/demo",
-			source: "https://github.com/example",
-			live: "https://example.com",
+			demo: null,
+			source: "https://github.com/Muhtasim-Zawad/Project_Baksho.git",
+			live: null,
 		},
 	},
 	{
 		id: 3,
-		logo: "frog",
-		role: "VISUAL DESIGNER",
-		company: "FROG",
-		date: "2018 - 2019",
-		image: "https://placehold.co/800x400/00272c/e1ff51?text=FROG",
+		logo: "pico",
+		display_name: "PicoDB",
+		role: "SYSTEMS",
+		date: "2025",
+		image: "src/assets/images/zawad-portfolio-image.jpg",
 		title: "PicoDB",
-		techStack: ["Illustrator", "Photoshop", "Premiere Pro", "Figma"],
-		summary: "Designed immersive brand identities and motion systems.",
+		techStack: ["C++", "CMake", "SQL", "CSV", "Cryptography"],
+		summary:
+			"A lightweight C++ SQL simulation engine featuring relational operations and CSV-based data persistence.",
 		description:
-			"Developed visual identity systems for tech startups and established enterprises. Created motion design assets, brand guidelines, and promotional materials. Collaborated with strategy and engineering teams to translate complex briefs into compelling visual narratives.",
+			"Core SQL engine supporting SELECT, INSERT, UPDATE, DELETE, table JOINs, and subqueries.\nRelational integrity layer managing primary and foreign key constraints with WHERE clause filtering.\nBuilt-in data utility suite featuring XOR encryption and string, numeric, and date formatting functions.\nLightweight, zero-dependency persistence architecture utilizing CSV file storage.",
 		links: {
-			demo: "https://example.com/demo",
-			source: "https://github.com/example",
-			live: "https://example.com",
+			demo: null,
+			source: "https://github.com/thebigby10/PicoDB.git",
+			live: null,
 		},
 	},
 	{
 		id: 4,
-		logo: "TBD*",
-		role: "DESIGN MANAGER",
-		company: "CCA TBD* STUDIO",
-		date: "2017 - 2018",
-		image: "https://placehold.co/800x400/00272c/e1ff51?text=TBD+STUDIO",
-		title: "CCA TBD* Studio — Design Manager",
-		techStack: ["Figma", "Notion", "Miro", "After Effects"],
-		summary: "Managed student-led design studio producing client work.",
+		logo: "⟁",
+		display_name: "FictiPay",
+		role: "ML ENGINEER",
+		date: "2025",
+		image: "src/assets/images/zawad-portfolio-image.jpg",
+		title: "FictiPay Churn",
+		techStack: ["Python", "Polars", "LightGBM", "SHAP", "Optuna"],
+		summary:
+			"LightGBM pipeline on 595K accounts using Polars and SHAP to predict and interpret user churn.",
 		description:
-			"Directed a team of 12 student designers in a studio environment, managing project timelines, client communication, and design deliverables. Orchestrated workshops, critiques, and portfolio reviews. Secured 3 major clients for the studio's inaugural year.",
-		links: {
-			demo: "https://example.com/demo",
-			source: "https://github.com/example",
-			live: "https://example.com",
-		},
-	},
-	{
-		id: 5,
-		logo: "SYP",
-		role: "DESIGN INTERN",
-		company: "SYPARTNERS",
-		date: "2017",
-		image: "https://placehold.co/800x400/00272c/e1ff51?text=SYPARTNERS",
-		title: "SYPartners — Design Intern",
-		techStack: ["Figma", "Keynote", "InDesign"],
-		summary: "Supported strategy and design teams on transformation projects.",
-		description:
-			"Assisted senior designers in crafting executive-level presentations and strategic design frameworks. Developed visual assets for client workshops and conducted competitive analysis research. Gained exposure to design thinking methodology applied to organizational transformation.",
+			"Engineered 53 features using Polars on 595K accounts.\nOptimized LightGBM via Optuna with stratified cross-validation.\nIsolated key churn drivers using SHAP interpretability.\nModeled user stickiness with custom drop_off_score and switching_cost metrics.",
 		links: {
 			demo: null,
 			source: null,
@@ -207,7 +192,7 @@ const ProjectModal = ({ project, onClose }) => {
 				<div className="p-6 md:p-8 space-y-6">
 					<div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2">
 						<h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-[#e1ff51]">
-							{project.title || project.company}
+							{project.title || project.role}
 						</h3>
 						<span className="text-xs md:text-sm font-bold uppercase tracking-widest text-[#e1ff51]/60 whitespace-nowrap">
 							{project.date}
@@ -278,7 +263,10 @@ const ProjectsSection = () => {
 	const closeModal = () => setSelectedProject(null);
 
 	return (
-		<section className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#e1ff51] selection:text-[#00272c]">
+		<section
+			id="projects"
+			className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#e1ff51] selection:text-[#00272c]"
+		>
 			<div className="max-w-6xl w-full flex flex-col items-center space-y-16">
 				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase leading-none font-sans flex items-center justify-center">
 					<motion.div
@@ -341,13 +329,13 @@ const ProjectsSection = () => {
 										variants={textVariants}
 										className="text-xs md:text-sm font-black tracking-wider leading-snug"
 									>
-										{project.role}
+										{project.display_name}
 									</motion.h3>
 									<motion.p
 										variants={mutedTextVariants}
 										className="text-[10px] md:text-xs font-bold"
 									>
-										@ {project.company}
+										@ {project.role}
 									</motion.p>
 								</div>
 
