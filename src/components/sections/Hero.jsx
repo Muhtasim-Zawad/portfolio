@@ -50,7 +50,7 @@ const HeroSection = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
 						{/* The Huge Text Container (Left-aligned text layout) */}
 						<h1
-							className="text-[min(45vh,20vw)] md:text-[min(45vh,8vw)] font-black uppercase leading-[0.8] lg:col-span-12 flex flex-col items-start justify-start text-left w-full"
+							className="text-[min(45vh,20vw)] md:text-[min(45vh,8vw)] font-[990] uppercase leading-[0.85] lg:col-span-12 flex flex-col items-start justify-start text-left w-full scale-y-[1.4]"
 							style={{ fontFamily: "Manuka, sans-serif" }}
 						>
 							{/* Line 1: MH */}
@@ -64,7 +64,7 @@ const HeroSection = () => {
 								{"MHT ".split("").map((letter, index) => (
 									<span
 										key={`mh-${index}`}
-										className="overflow-hidden inline-block px-0.5"
+										className="overflow-hidden inline-block"
 									>
 										<motion.span
 											className="block"
@@ -98,7 +98,7 @@ const HeroSection = () => {
 								{"ZAWAD".split("").map((letter, index) => (
 									<span
 										key={`zawad-${index}`}
-										className="overflow-hidden inline-block"
+										className={`overflow-hidden inline-block ${index === 2 ? "-mx-1" : ""}`}
 									>
 										<motion.span
 											className="block"
@@ -125,10 +125,11 @@ const HeroSection = () => {
 							initial={{ opacity: 0, x: 20 }}
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ delay: 0.6, duration: 0.6 }}
-							className="text-xs md:text-sm font-medium leading-relaxed max-w-xs lg:col-span-4 lg:pt-4 text-left"
+							className="text-xs md:text-sm font-medium leading-relaxed lg:col-span-12 mt-10 text-left"
 						>
 							Designing graphic and digital experiences that ease, beautify, and
-							delight moments in life.
+							delight moments in life Designing graphic and digital experiences
+							that ease, beautify, and delight moments in life.
 						</motion.p>
 					</div>
 				</motion.div>
