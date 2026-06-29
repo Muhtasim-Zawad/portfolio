@@ -37,7 +37,7 @@ const HeroSection = () => {
 			{/* <Navbar className="absolute top-0 left-0 w-full z-50 p-6 md:p-12" /> */}
 
 			{/* LEFT COLUMN: BRANDING & TYPOGRAPHY */}
-			<div className="flex flex-col justify-between p-6 md:p-24 md:pb-6  h-full text-[#e1ff51] min-h-[50vh] md:min-h-screen">
+			<div className="flex flex-col justify-between p-6 pt-20 md:p-24 md:pb-6  h-full text-[#e1ff51] min-h-[50vh] md:min-h-screen">
 				<Navbar className="fixed top-4 left-4 z-50" />
 
 				{/* Big Heading Titles with Slide-up Animation */}
@@ -158,11 +158,14 @@ const HeroSection = () => {
 				/>
 
 				{/* Floating Interactive Action / Contact Button (Bottom Right) */}
-				<div className="absolute bottom-6 right-6 md:bottom-12 md:right-12 z-20">
+				<div className="hidden md:block fixed bottom-12 right-12 z-20">
 					<motion.button
 						whileHover={{ scale: 1.1 }}
 						whileTap={{ scale: 0.95 }}
-						className="w-16 h-16 md:w-20 md:h-20 bg-black rounded-full flex items-center justify-center text-[#e1ff51] shadow-xl cursor-pointer"
+						onClick={() =>
+							window.open("mailto:muhtasimzawad.jfcl@gmail.com", "_blank")
+						}
+						className="w-20 h-20 bg-black rounded-full flex items-center justify-center text-[#e1ff51] shadow-xl cursor-pointer"
 					>
 						{/* Mail Icon */}
 						<svg
@@ -171,7 +174,7 @@ const HeroSection = () => {
 							viewBox="0 0 24 24"
 							strokeWidth={2}
 							stroke="currentColor"
-							className="w-6 h-6 md:w-8 md:h-8"
+							className="w-8 h-8"
 						>
 							<path
 								strokeLinecap="round"

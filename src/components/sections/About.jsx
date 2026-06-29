@@ -4,7 +4,7 @@ import AnimatedButton from "../common/Button"; // Adjust the import path as need
 
 const AboutSection = () => {
 	return (
-		<section className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#ce3421] selection:text-[#00272c]">
+		<section id="about" className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#ce3421] selection:text-[#00272c]">
 			<div className="max-w-4xl w-full flex flex-col items-center text-center space-y-12">
 				{/* ========================================================= */}
 				{/* STAGGERED TEXT SWIPE UP TITLE                             */}

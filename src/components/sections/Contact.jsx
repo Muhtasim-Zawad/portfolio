@@ -66,11 +66,14 @@ const ContactSection = () => {
 	const socialLinks = [
 		{ name: "GitHub", url: "https://github.com/Muhtasim-Zawad" },
 		{ name: "LinkedIn", url: "https://www.linkedin.com/in/mzawad/" },
-		{ name: "Instagram", url: "https://x.com" },
+		{ name: "Instagram", url: "https://www.instagram.com/zawad_esque/" },
 	];
 
 	return (
-		<section className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-between p-6 md:p-12 selection:bg-[#ce3421] selection:text-[#00272c]">
+		<section
+			id="contact"
+			className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-between p-6 md:p-12 selection:bg-[#ce3421] selection:text-[#00272c]"
+		>
 			{/* Spacer layer to push layout nodes cleanly into position */}
 			<div className="hidden md:block" />
 

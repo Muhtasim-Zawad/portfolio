@@ -72,7 +72,7 @@ const SkillsSection = () => {
 	};
 
 	return (
-		<section className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#e1ff51] selection:text-[#00272c]">
+		<section id="skills" className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#e1ff51] selection:text-[#00272c]">
 			<div className="max-w-6xl w-full flex flex-col items-center space-y-16">
 				{/* ========================================================= */}
 				{/* STAGGERED TEXT SWIPE UP TITLE                             */}
