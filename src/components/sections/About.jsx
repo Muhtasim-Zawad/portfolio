@@ -103,7 +103,7 @@ const AboutSection = () => {
 					</AnimatedButton>
 
 					<AnimatedButton
-						onClick={() => console.log("Download CV")}
+						onClick={() => window.open("https://drive.google.com/file/d/1GFnqTWCBsl8fLsC4TGrhWOTnVw-rogi2/view?usp=sharing", "_blank")}
 						className="!bg-transparent !text-[#ce3421] border border-[#ce3421] hover:!text-[#00272c]"
 					>
 						Download CV

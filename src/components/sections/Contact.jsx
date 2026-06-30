@@ -67,6 +67,10 @@ const ContactSection = () => {
 		{ name: "GitHub", url: "https://github.com/Muhtasim-Zawad" },
 		{ name: "LinkedIn", url: "https://www.linkedin.com/in/mzawad/" },
 		{ name: "Instagram", url: "https://www.instagram.com/zawad_esque/" },
+		{
+			name: "Resume",
+			url: "https://drive.google.com/file/d/1GFnqTWCBsl8fLsC4TGrhWOTnVw-rogi2/view?usp=sharing",
+		},
 	];
 
 	return (
