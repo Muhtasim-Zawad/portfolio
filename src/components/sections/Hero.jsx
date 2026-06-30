@@ -1,9 +1,40 @@
+import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Navbar from "../common/Navbar";
 
 const HeroSection = () => {
 	const { scrollY } = useScroll();
 	const imageY = useTransform(scrollY, [0, 800], [0, -400]);
+
+	// 1. Initialize state immediately using the client's system time
+	const [currentTime, setCurrentTime] = useState(() => new Date());
+
+	useEffect(() => {
+		// 2. Keep it moving smoothly locally without hitting an external API endpoint
+		const interval = setInterval(() => {
+			setCurrentTime(new Date());
+		}, 1000); // 1000ms ensures the minute transitions exactly when it should
+
+		return () => clearInterval(interval);
+	}, []);
+
+	const formatDate = () => {
+		return new Intl.DateTimeFormat("en-US", {
+			month: "short",
+			day: "numeric",
+			year: "numeric",
+			timeZone: "Asia/Dhaka", // Forces calculation to Dhaka zone regardless of where the visitor is
+		}).format(currentTime);
+	};
+
+	const formatTime = () => {
+		return new Intl.DateTimeFormat("en-US", {
+			hour: "numeric",
+			minute: "2-digit",
+			hour12: true,
+			timeZone: "Asia/Dhaka", // Automatically shifts client clock offsets to match Dhaka
+		}).format(currentTime);
+	};
 
 	// Animation configuration for the text slide-up effect
 	const titleLineVariants = {
@@ -137,8 +168,8 @@ const HeroSection = () => {
 				{/* Footer Meta Details Data Row */}
 				<div className="flex justify-between items-center text-[10px] md:text-xs font-bold tracking-wider border-t border-black/10 pt-4 uppercase">
 					<div>Dhaka, BD</div>
-					<div>Jun 29, 2026</div>
-					<div>10:45 PM</div>
+					<div>{formatDate()}</div>
+					<div>{formatTime()}</div>
 				</div>
 			</div>
 

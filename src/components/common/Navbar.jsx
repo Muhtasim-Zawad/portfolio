@@ -1,13 +1,31 @@
 import { useState, useEffect } from "react";
-import { motion } from "motion/react";
+import { motion, animate } from "motion/react";
 
-const navLinks = ["CONTACT", "SKILLS", "PROJECTS", "ABOUT"];
+const desktopNavLinks = ["CONTACT", "SKILLS", "PROJECTS", "ABOUT"];
+const mobileNavLinks = ["ABOUT", "PROJECTS", "SKILLS", "CONTACT"];
+
+// function scrollToSection(id) {
+// 	const el = document.getElementById(id);
+// 	if (el) {
+// 		el.scrollIntoView({ behavior: "smooth" });
+// 	}
+// }
 
 function scrollToSection(id) {
 	const el = document.getElementById(id);
-	if (el) {
-		el.scrollIntoView({ behavior: "smooth" });
-	}
+	if (!el) return;
+
+	const yOffset = -20; // adjust for navbar spacing
+	const targetY = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+	const startY = window.pageYOffset;
+
+	animate(startY, targetY, {
+		duration: 2.5,
+		ease: [0.16, 1, 0.3, 1], // same custom ease you use elsewhere
+		onUpdate: (value) => {
+			window.scrollTo(0, value);
+		},
+	});
 }
 
 export default function Navbar({ className = "" }) {
@@ -57,7 +75,7 @@ export default function Navbar({ className = "" }) {
 						animate={{ opacity: isMenuOpen ? 1 : 0 }}
 						transition={{ duration: 0.35, delay: isMenuOpen ? 0.2 : 0 }}
 					>
-						{navLinks.map((link) => (
+						{mobileNavLinks.map((link) => (
 							<button
 								key={link}
 								onClick={() => handleLinkClick(link.toLowerCase())}
@@ -88,7 +106,7 @@ export default function Navbar({ className = "" }) {
 					𠮷
 				</div>
 
-				{navLinks.map((link) => (
+				{desktopNavLinks.map((link) => (
 					<motion.button
 						key={link}
 						onClick={() => scrollToSection(link.toLowerCase())}
