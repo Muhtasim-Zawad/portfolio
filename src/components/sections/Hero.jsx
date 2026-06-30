@@ -129,7 +129,7 @@ const HeroSection = () => {
 							Engineering intelligent software that thinks, scales, and operates
 							with precision. Merging distributed systems, multi-agent AI
 							pipelines, and clean backend data flows into fluid, high-impact
-							digital experiences.
+							digital products.
 						</motion.p>
 					</div>
 				</motion.div>

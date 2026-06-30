@@ -268,7 +268,7 @@ const ProjectsSection = () => {
 			id="projects"
 			className="w-full min-h-screen bg-[#00272c] text-[#e1ff51] flex flex-col justify-center items-center p-6 md:p-12 selection:bg-[#ce3421] selection:text-[#00272c]"
 		>
-			<div className="max-w-6xl w-full flex flex-col items-center space-y-16">
+			<div className="max-w-5xl w-full flex flex-col items-center space-y-16">
 				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase leading-none font-sans flex items-center justify-center">
 					<motion.div
 						className="flex overflow-hidden"

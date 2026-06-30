@@ -15,8 +15,8 @@ function App() {
 	return (
 		<>
 			<div>
-				{/* <AnimatedButton /> */}
 				<HeroSection />
+				<Divider />
 				<AboutSection />
 				<Divider />
 				<EducationSection />
