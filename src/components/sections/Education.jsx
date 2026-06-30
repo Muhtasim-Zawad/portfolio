@@ -8,7 +8,7 @@ const educationData = [
 		degree: "Bachelor of Science in Software Engineering",
 		gpa: "CGPA: 3.66 (Till 5th Semester)",
 		date: "Aug. 2023 – Present",
-		location: "Dhaka`, Bangladesh",
+		location: "Dhaka, Bangladesh",
 	},
 	{
 		id: 2,
@@ -158,7 +158,7 @@ const EducationSection = () => {
 			ref={sectionRef}
 			className="w-full bg-[#00272c] text-[#e1ff51] flex flex-col items-center py-24 md:py-32 px-6 md:px-12 selection:bg-[#ce3421] selection:text-[#00272c]"
 		>
-			<div className="max-w-5xl w-full flex flex-col items-center mb-20">
+			<div className="max-w-6xl w-full flex flex-col items-center mb-20">
 				<h2 className="text-[8vw] md:text-[5vw] font-black uppercase leading-none font-sans flex items-center justify-center">
 					<motion.div
 						className="flex overflow-hidden"
@@ -193,7 +193,7 @@ const EducationSection = () => {
 				</h2>
 			</div>
 
-			<div className="max-w-5xl w-full relative">
+			<div className="max-w-6xl w-full relative">
 				{/* Vertical line (trunk) */}
 				<motion.div
 					style={{ scaleY: lineScale, originY: 0 }}
