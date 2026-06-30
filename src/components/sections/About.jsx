@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "motion/react";
+import { motion, animate } from "motion/react";
 import AnimatedButton from "../common/Button"; // Adjust the import path as needed
 
 const AboutSection = () => {
@@ -85,11 +85,18 @@ const AboutSection = () => {
 				>
 					{/* Custom style mapping passed to match the inverted look */}
 					<AnimatedButton
-						onClick={() =>
-							document
-								.getElementById("projects")
-								?.scrollIntoView({ behavior: "smooth" })
-						}
+						onClick={() => {
+							const el = document.getElementById("projects");
+							if (!el) return;
+							const yOffset = -20;
+							const targetY = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+							const startY = window.pageYOffset;
+							animate(startY, targetY, {
+								duration: 2.5,
+								ease: [0.16, 1, 0.3, 1],
+								onUpdate: (value) => window.scrollTo(0, value),
+							});
+						}}
 						className="!bg-[#ce3421] !text-[#00272c] border border-[#ce3421] hover:!text-[#ce3421]"
 					>
 						Explore Works
