@@ -176,7 +176,7 @@ const HeroSection = () => {
 			{/* RIGHT COLUMN: HERO GRAPHIC / IMAGE PORTRAIT */}
 			<div className="relative w-full h-[50vh] md:h-screen overflow-hidden bg-[#00272c]">
 				<motion.img
-					src="src/assets/images/zawad-portfolio-image.jpg"
+					src="src/assets/images/muhtasim-zawad-portfolio-image.jpg"
 					alt="Muhtasim Zawad Portrait Picture"
 					initial={{ opacity: 0, scale: 1.05 }}
 					animate={{ opacity: 1, scale: 1 }}
