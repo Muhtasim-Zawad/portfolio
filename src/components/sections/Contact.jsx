@@ -214,7 +214,7 @@ const ContactSection = () => {
 
 				{/* Standard Design Baseline Copyright Meta */}
 				<div className="text-[#e1ff51]/50 text-center sm:text-right">
-					© 2026 — All Rights Reserved
+					© 2026 — Muhtasim Zawad
 				</div>
 			</div>
 		</section>
