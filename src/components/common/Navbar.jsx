@@ -14,6 +14,7 @@ export default function Navbar({ className = "" }) {
 	const [isHovered, setIsHovered] = useState(false);
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+	const [hoveredLink, setHoveredLink] = useState(null);
 
 	useEffect(() => {
 		const check = () => setIsMobile(window.innerWidth < 768);
@@ -60,7 +61,9 @@ export default function Navbar({ className = "" }) {
 							<button
 								key={link}
 								onClick={() => handleLinkClick(link.toLowerCase())}
-								className="bg-[#e1ff51] text-black text-sm font-bold tracking-wider cursor-pointer"
+								onMouseEnter={() => setHoveredLink(link)}
+								onMouseLeave={() => setHoveredLink(null)}
+								className="bg-[#e1ff51] text-black text-sm font-bold tracking-wider cursor-pointer flex items-center gap-2"
 							>
 								{link}
 							</button>
@@ -75,7 +78,7 @@ export default function Navbar({ className = "" }) {
 	return (
 		<div className={className}>
 			<motion.div
-				className="flex flex-row-reverse items-center bg-black rounded-lg overflow-hidden cursor-pointer gap-x-2"
+				className="flex flex-row-reverse items-center bg-[#e1ff51] rounded-lg overflow-hidden cursor-pointer gap-x-2"
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => setIsHovered(false)}
 				animate={{ maxWidth: isHovered ? 500 : 68 }}
@@ -89,7 +92,9 @@ export default function Navbar({ className = "" }) {
 					<motion.button
 						key={link}
 						onClick={() => scrollToSection(link.toLowerCase())}
-						className="inline-block text-[#e1ff51] text-sm font-bold tracking-wider whitespace-nowrap overflow-hidden px-4 cursor-pointer"
+						onMouseEnter={() => setHoveredLink(link)}
+						onMouseLeave={() => setHoveredLink(null)}
+						className="inline-block text-black text-sm font-bold tracking-wider whitespace-nowrap overflow-hidden px-6 cursor-pointer flex items-center gap-4"
 						animate={{ opacity: isHovered ? 1 : 0 }}
 						transition={{
 							duration: 0.35,
@@ -97,6 +102,16 @@ export default function Navbar({ className = "" }) {
 							ease: "easeOut",
 						}}
 					>
+						<motion.span
+							animate={
+								hoveredLink === link
+									? { opacity: 1, x: 0 }
+									: { opacity: 0, x: -4 }
+							}
+							transition={{ duration: 0.3, ease: "easeOut" }}
+						>
+							▸
+						</motion.span>
 						{link}
 					</motion.button>
 				))}
